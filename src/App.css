@@ -1,38 +1,130 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+.App {  
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: max-content;
+    font-family: 'Gochi Hand', cursive;
+    /*background-image: url();*/
+}
+
+/*------HEADER COMPONENT------*/
+.header {
+  background-image: url(img/background.jpg) ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 400px;
+}
+
+ h1 {
+   text-align: center;
+   padding: 40px;
+   margin: 0;
+}
+
+.header p {
+  font-size: 150%;
   text-align: center;
+  margin-top: -25px;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*------ADD TASK FIELD COMPONENT------*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.text-todo {
+  height: 35px;
+  padding: 10px;
+  font-size: 150%;
+  font-family: inherit;
+  width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-todo:focus {
+  outline: none;
+  border-color:#F28609;
+  border-style: solid;
+}
+
+/*button*/
+
+ .button {
+  width: 15%;
+  height: 35px;
+  font-size: 150%;
+  background-color: #fff;
+  border: 2px solid #b33c5a;
+  color: #b33c5a;
+}
+
+ .button:focus,
+ .button:active {
+  border: 2px solid #b33c5a;
+  outline: none;
+}
+
+/*------TASKS LIST------*/
+
+.task-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  border-bottom: 1px solid rgb(179, 192, 196);
+}
+
+.task-container:nth-child(1) {
+  margin-top: 20px;
+  border-top: 1px solid rgb(179, 192, 196);
+}
+
+.footer {
+  background-image: url(./img/background-bot.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130px;
+  width: 400px;
+
+}
+
+.task { 
+  font-size: 150%;
+  font-family: inherit;
+  width: 70%;
+}
+
+/*button for completed tasks*/
+
+.btn-completed {
+  width: 15%;
+  height: 35px;
+  font-size: 120%;
+  background-color: #fff;
+  border: 2px solid #6A9E03;
+  color: #6A9E03;
+}
+
+.btn-completed:focus,
+.btn-completed:active {
+ border: 2px solid  #6A9E03;
+ outline: none;
+}
+
+/*paragraph when tasks are completed*/
+.no-tasks-text {
+  text-align: center;
+  font-size: 180%;
 }
