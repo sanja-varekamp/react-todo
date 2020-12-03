@@ -1,3 +1,11 @@
+# REACT TO-DO 
+This is a small react to-do list. The functionality I learned from the guide from The Net Ninja ReactJS tutorial on YouTube. I recreated the app because I was trying to learn react, while understanding every line of code. I added my own design flare to it, changed the UI and the way compononets are built to suit my own ideas. 
+
+Apart from it's basic functionality, I gave myself the task to understand how to animate in React, so in this app I used react-animations and styled-components to create an animated component which has a fadeIn animation on it. 
+
+
+
+# REACT APP READ ME
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
